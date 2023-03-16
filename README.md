@@ -1,10 +1,10 @@
 # Breast Cancer Data Analysis
-The objective of this project is to develop a predictive model that can determine whether a patient is afflicted with malignant cancer or not. The dataset used in this project is sourced from the UIC machine learning database and contains eleven attributes, including patient ID and class.
+The objective of this project is to develop a model that can predict whether a patient has malignant cancer or not. The dataset used in this project is sourced from the UIC machine learning database.
 
 The independent or predictor variables in this dataset are ClumpThickness, Cell Size, Cell Shape, Marginal Adhesion, Single Epithelial Cell Size, Bare Nuclei, Normal Nucleoli, Bland Chromatin, and Mitoses. The target variable that the model aims to predict is the class of the cancer, which is classified as either benign (2) or malignant (4).
 
 ## Model Building
-To simplify the classification process and enhance model accuracy, the original dataset was used with all variables, but the number of categories for each variable was substantially reduced by grouping them into 2, 3, or 4 clusters as appropriate. The logistic regression model was constructed with a focus on recall, which is critical for identifying every positive case. The model achieved an accuracy score of 96% on the train data and 97% on the test data, with a recall, precision, and f1 score of 96%. The ROC AUC was 97%.
+The original dataset was used with all variables, but the number of categories for each variable was substantially reduced by grouping them into 2, 3, or 4 clusters as appropriate. The logistic regression model was constructed with a focus on recall, which is critical for identifying every positive case. The model achieved an accuracy score of 96% on the train data and 97% on the test data, with a recall, precision, and f1 score of 96%. The ROC AUC was 97%.
 
 ## Conclusion
 In conclusion, the analysis of the dataset revealed that certain features are more prevalent in either benign or malignant cases. For instance, marginal adhesion and single epithelial cell size of size 4 and above were found to be more common in malignant cases. On the other hand, benign cases were mostly observed in categories 1, 2, and 3 for both of these features.
